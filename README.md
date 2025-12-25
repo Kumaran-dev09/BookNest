@@ -56,5 +56,5 @@ https://kumaran-dev09.github.io/BookNest/
 
 ## 👨‍💻 Author
 **Kumaran**  
-Frontend Developer (Beginner Project)
+Aspiring Java Full Stack Developer (Beginner Project)
 
