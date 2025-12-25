@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./Image/Logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookNest</title>
+    <link rel="stylesheet" href="BookNest.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>BookNest</h1>
+      <nav class="nav-links">
+        <a href="#heroSection">Home</a>
+        <a href="#books-section">Books</a>
+        <div class="dropdown">
+          <span class="dropdown-title">Categories ▾</span>
+          <div class="dropdown-menu">
+            <a href="#" data-category="all">All Books</a>
+            <a href="#" data-category="selfhelp">Self-Help & Motivation</a>
+            <a href="#" data-category="poetry">Poetry & Love</a>
+            <a href="#" data-category="emotions">Emotions</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search books..." />
+          <button id="searchBtn">Search</button>
+          <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+    <!-- heroSection -->
+    <section class="hero animate-hero" id="heroSection">
+      <h2 class="text">Discover Your Next Favorite Book</h2>
+      <p>Explore handpicked books in Emotions, poetry, and self-growth.</p>
+      <a href="#books-section" class="shop-btn">Shop Now</a>
+    </section>
+    <!-- categories-section -->
+    <section
+      class="categories-section animate-on-scroll"
+      id="categoriesSection"
+    >
+      <h2 class="section-title">Browse by Category</h2>
+
+      <div class="categories-grid">
+        <div class="category-card" data-category="selfhelp">
+          <i class="fa-solid fa-brain"></i>
+          <h3>Self-Help & Motivation</h3>
+        </div>
+
+        <div class="category-card" data-category="poetry">
+          <i class="fa-solid fa-heart"></i>
+          <h3>Poetry & Love</h3>
+        </div>
+
+        <div class="category-card" data-category="emotions">
+          <i class="fa-solid fa-feather"></i>
+          <h3>Emotions</h3>
+        </div>
+
+        <div class="category-card" data-category="all">
+          <i class="fa-solid fa-book"></i>
+          <h3>All Books</h3>
+        </div>
+      </div>
+    </section>
+    <!-- books-section -->
+    <section class="books-section animate-on-scroll" id="books-section">
+      <h2 class="section-title">Our Collection</h2>
+      <div class="books-grid">
+        <div class="book-card" data-category="emotions">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image3.jpg" alt="Book Cover" />
+              <h3>Stangers again?</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button
+                class="add-to-cart"
+                data-title="Strangers Again?"
+                data-price="499"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="emotions">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image4.jpg" alt="Book Cover" />
+              <h3>I don't love you</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button
+                class="add-to-cart"
+                data-title="I don't love you"
+                data-price="499"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="selfhelp">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image5.jpg" alt="Book Cover" />
+              <h3>All this love</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button
+                class="add-to-cart"
+                data-title="All this love"
+                data-price="499"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="selfhelp">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image6.jpg" alt="Book Cover" />
+              <h3>Success</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button class="add-to-cart" data-title="Success" data-price="499">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="selfhelp">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image7.jpg" alt="Book Cover" />
+              <h3>FriendLiness</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button
+                class="add-to-cart"
+                data-title="FriendLiness"
+                data-price="499"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="selfhelp">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image8.jpg" alt="Book Cover" />
+              <h3>Space</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button class="add-to-cart" data-title="Space" data-price="499">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="poetry">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image9.jpg" alt="Book Cover" />
+              <h3>Batterfly</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button
+                class="add-to-cart"
+                data-title="Batterfly"
+                data-price="499"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card" data-category="poetry">
+          <div class="book-inner">
+            <div class="book-front">
+              <img src="Image/image10.jpg" alt="Book Cover" />
+              <h3>Purple sky</h3>
+            </div>
+            <div class="book-back">
+              <p>Price: ₹499</p>
+              <button
+                class="add-to-cart"
+                data-title="Purple sky"
+                data-price="499"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why-booknest -->
+    <section class="why-booknest animate-on-scroll">
+      <h2 class="section-title">Why BookNest?</h2>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Curated Book Collection</h3>
+          <p>Handpicked books focused on emotions, growth, and inspiration.</p>
+        </div>
+
+        <div class="why-card">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Easy Shopping Experience</h3>
+          <p>Simple navigation, quick filtering, and smooth cart management.</p>
+        </div>
+
+        <div class="why-card">
+          <i class="fa-solid fa-floppy-disk"></i>
+          <h3>Cart Saved Automatically</h3>
+          <p>Your selected books stay saved even after refreshing the page.</p>
+        </div>
+      </div>
+    </section>
+    <!-- cta-section -->
+    <section class="cta-section animate-on-scroll">
+      <h2>Ready to Find Your Next Favorite Book?</h2>
+      <p>Explore our complete collection and start reading today.</p>
+      <a href="index.html" class="cta-btn">Explore Books</a>
+    </section>
+    <!-- footer section-->
+    <footer class="main-footer animate-on-scroll">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>BookNest</h3>
+          <ul>
+            <li><a href="#books-section">Fiction & Poetry</a></li>
+            <li><a href="#books-section">Self-Help</a></li>
+            <li><a href="#books-section">Emotions</a></li>
+            <li><a href="#books-section">Best Sellers</a></li>
+            <li><a href="#books-section">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Readers Club</a></li>
+            <li><a href="#">Book Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About BookNest</a></li>
+            <li><a href="#">Our Vision</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-right">
+          <h3>Stay Connected</h3>
+
+          <div class="footer-social">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+
+          <div class="footer-subscribe">
+            <input
+              type="email"
+              id="footerEmail"
+              placeholder="Enter your email"
+            />
+            <button id="footerSubscribeBtn">→</button>
+          </div>
+          <small class="footer-error" id="footerMsg"></small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 BookNest | Designed by Kumaran.</div>
+    </footer>
+  </body>
+  <script src="BookNest.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | BookNest</title>
+    <link rel="stylesheet" href="BookNest.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="contact-header">
+      <h1>BookNest</h1>
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </header>
+
+    <section class="contact-section animate-on-scroll">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="contact-desc">
+        Have questions, suggestions, or feedback? We’d love to hear from you.
+      </p>
+
+      <div class="contact-container animate-on-scroll">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fa-solid fa-envelope"></i> support@booknest.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 90000 00000</p>
+          <p><i class="fa-solid fa-location-dot"></i> Coimbatore, India</p>
+
+          <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" />
+          <small class="error"></small>
+
+          <input type="email" id="email" placeholder="Your Email" />
+          <small class="error"></small>
+
+          <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+          <small class="error"></small>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 BookNest | Designed by Kumaran</p>
+    </footer>
+  </body>
+  <script src="BookNest.js"></script>
+</html>

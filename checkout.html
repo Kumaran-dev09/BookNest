@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | BookNest</title>
+    <link rel="stylesheet" href="BookNest.css" />
+  </head>
+  <body>
+    <header class="contact-header">
+      <h1>BookNest</h1>
+      <a href="cart.html" class="back-link">← Back to Cart</a>
+    </header>
+
+    <section class="checkout-section">
+      <h2 class="section-title">Checkout</h2>
+
+      <div class="checkout-container">
+        <!-- LEFT: CUSTOMER DETAILS -->
+        <form class="checkout-form" id="checkoutForm">
+          <h3>Billing Details</h3>
+
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email Address" required />
+          <input type="text" id="address" placeholder="Address" required />
+          <input type="text" id="city" placeholder="City" required />
+          <input type="text" id="pincode" placeholder="Pincode" required />
+
+          <button type="submit">Place Order</button>
+        </form>
+
+        <!-- RIGHT: ORDER SUMMARY -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+
+          <div id="checkout-items"></div>
+
+          <div class="summary-total">
+            Total: ₹<span id="checkout-total">0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 BookNest | Designed by Kumaran</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>
